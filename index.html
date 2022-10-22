@@ -1,0 +1,72 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Signup</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="Full-screen">
+    <div class="main-screen">
+        <form class="form" onsubmit="func()">
+        <div class="header">
+            <div class="design">
+            <h1>Signup</h1><span></span></div>
+            <p>Signup by entering the information below</p>
+        </div>
+        
+        <div class="container-field">
+            <div class="username-container container">
+                <label>Username</label>
+                <input id="id_name" class="user" type="text" name="user" placeholder="Enter your username here">
+                <span id="name-error"></span>
+            </div>
+            <div class="email-container container">
+                <label>Email</label>
+                <input id="id_email" class="email" type="email" name="email" placeholder="Enter your email address here">
+                <span id="email-error"></span>
+            </div>
+            <div class="pass-container container">
+                <label>Password</label>
+                <div class="pass-cont">
+                <input class="password" id="id_password" type="password" name="password" placeholder="Enter your password here" ><i class="far fa-eye" id="togglePassword"></i></div>
+                <span id="pass-error"></span>
+            </div>
+        </div>
+            
+            <script src="script.js"></script>
+        
+        <div class="remember-forgot">
+            <div class="remember">
+                <input type="checkbox">
+                <p>Remember me</p>
+            </div>
+            <div class="forgot">
+                <a href="#"><p>Forgot Password?</p></a>
+            </div>
+        </div>
+        
+        <div class="signup-btn">
+            <button class="btn" type="submit">SIGN UP</button>
+        </div>
+            
+        <div class="signin">
+            <p>Already registered ? <a href="#">Sign in</a></p>
+        </div>
+            
+    </form>
+        
+    </div>
+        
+    
+    </div>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
